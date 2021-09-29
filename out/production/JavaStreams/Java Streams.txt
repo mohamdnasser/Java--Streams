@@ -1,0 +1,24 @@
+						        	Java Streams
+========================================================================================================================
+    - Java 8 Streams should not be confused with Java I/O streams.
+    - allowing us to operate with that data source and making bulk processing convenient and fast.
+      ex : if we have array list , and we need to do some operations on it, we shou use streams
+           data source >>> Streams (do operations) >>> result
+           operations : count() , for each() , sort()
+    - Streams follow twp concepts filter and map
+========================================================================================================================
+Filter(predicate -- lambda expression)
+Map(consumer -- lambda expression)
+========================================================================================================================
+we can use combination of filter and map :: collection >> Stream >> filter >> Map >> collection
+========================================================================================================================
+Difference between flatMap and map
+map :  single input >> single output.
+flatMap :  Multiple input (Collection) >> Multiple output (Collection).
+========================================================================================================================
+non terminal method / processing methods witch it is output is stream
+      ex: [ filter() - map() - flapMap() - limit() - sorted() - ... ]
+
+terminal operations
+      ex: [ min() - max() - collect() - forEach() - count() - ... ]
+========================================================================================================================
